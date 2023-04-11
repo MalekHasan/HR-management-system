@@ -3,12 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+    background-color: #F9F5EB;
+
+}
 header{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    background-color: #eee;
+    padding: 0.5rem;
+    background-color: #F9F5EB;
     box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.15);
 }
 a{
@@ -17,13 +22,16 @@ a{
     text-decoration: none;
     color: black;
 }
-a img{
-width: 50px;
+a i{
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    padding: 0.3rem;
+    color: #002B5B;
 }
 header a span{
     margin-top: 0.5rem;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
 }
 header ul{
     list-style: none;
@@ -40,9 +48,49 @@ footer{
     width: 100vw;
     margin-top: 2.25rem;
     padding: 0.5rem;
-    background-color: #eee;
-    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.15);
+    background-color: #E4DCCF;
     text-align: center;
 }
-footer h6{
+form{
+    margin: auto;
+    width: 40%;
+}
+fieldset{
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(249, 245, 235,0.1);
+    
+}
+fieldset label{
+    width: 100%;
+    margin: 0.5rem 7.5rem;
+
+}
+fieldset input{
+    width: 65%;
+    margin:0 4rem;
+    padding: 0.4rem;
+    background-color: #E4DCCF;
+    border: 0;
+    border-radius: 5px;
+}
+#btn-submit{
+    width: 4rem;
+    padding: 8px;
+    margin: 0.8rem 4rem;
+    cursor: pointer;
+}
+select{
+    width:65% ;
+    padding: 0.4rem;
+    background-color: #E4DCCF;
+    border: 0;
+    border-radius: 5px;
+
+
 }
