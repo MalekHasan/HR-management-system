@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR-Mangament System</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <div>
             <a>
-                <img src="img/HR.png" alt="">
+                <i class="fa-solid fa-people-group"></i>
                 <span>HrSys</span></a>
         </div>
         <ul>
@@ -22,8 +25,37 @@
         </ul>
     </header>
     <main>
-        <script src="js/app.js"></script>
-     
+        <form id="empForm">
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" placeholder="FullName">
+
+                <label for="dept">Department: </label>
+                <select name="dept" id="dept">
+                    <option>Choose</option>
+                    <option value="Administration">Administration</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Development">Development</option>
+                    <option value="Finance">Finance</option>
+                </select>
+                <label for="level">Level: </label>
+                <select name="level" id="level">
+                    <option>Choose</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-Senior">Mid-Senior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+
+                <label for="img">Image URL</label>
+                <input type="text" name="img" placeholder="Image">
+
+                <input type="submit" value="Submit" id="btn-submit">
+
+            </fieldset>
+        </form>
+        <div class="container" id="container">
+        </div>
+
     </main>
     <footer>
         <a href="">facebook</a>
@@ -31,5 +63,7 @@
         <a href="">YouTube</a>
         <h6>&copyCopyRight</h6>
     </footer>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
