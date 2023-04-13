@@ -70,4 +70,5 @@ function renderTable() {
 // console.log(sumSalrayOfDev);
 // console.log(sumSalrayOfFin);
 // console.log(sumSalrayOfMarket);
+// console.log(sumSalrayOfMarket);
 renderTable();
