@@ -7,6 +7,7 @@ function Employee(empId, fullName, department, level) {
   this.fullName = fullName;
   this.department = department;
   this.level = level;
+  this.empImage="../img/Contact us-pana.png";
   empArr.push(this);
 }
 Employee.prototype.calcSalary = function () {
@@ -30,12 +31,19 @@ Employee.prototype.CalcNetSalary = function () {
   return netSalary;
 };
 Employee.prototype.render = function () {
+  let divContent=document.createElement("div");
+  divContent.className="content";
   let empFullName = document.createElement("h2");
   let empSalary = document.createElement("h2");
+  let empImg = document.createElement("img");
+  empImg.src=this.empImage;
   empFullName.textContent = `Employee Name: ${this.fullName}`;
   empSalary.textContent = `Salary: ${this.calcSalary()}`;
-  container.appendChild(empFullName);
-  container.appendChild(empSalary); //add (line:33-38) when we took the new lecture
+  divContent.appendChild(empImg);
+  divContent.appendChild(empFullName);
+  divContent.appendChild(empSalary); 
+  container.appendChild(divContent); 
+  //add (line:33-38) when we took the new lecture
   // return document.write(
   //   `<h2>Employee Name: ${
   //     this.fullName
