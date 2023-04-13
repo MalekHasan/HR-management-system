@@ -36,12 +36,18 @@ Employee.prototype.render = function () {
   let empFullName = document.createElement("h2");
   let empSalary = document.createElement("h2");
   let empImg = document.createElement("img");
+  let empDept = document.createElement("h3");
+  let empLevel = document.createElement("h3");
   empImg.src=this.empImage;
-  empFullName.textContent = `Employee Name: ${this.fullName}`;
+  empFullName.textContent = `Name: ${this.fullName}`;
   empSalary.textContent = `Salary: ${this.calcSalary()}`;
+  empDept.textContent = `Department: ${this.department}`;
+  empLevel.textContent = `Level: ${this.level}`;
   divContent.appendChild(empImg);
   divContent.appendChild(empFullName);
   divContent.appendChild(empSalary); 
+  divContent.appendChild(empDept); 
+  divContent.appendChild(empLevel); 
   container.appendChild(divContent); 
   //add (line:33-38) when we took the new lecture
   // return document.write(
