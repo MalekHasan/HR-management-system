@@ -100,7 +100,7 @@ select{
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.15);
-    text-align: center;
+    
 }
 .container{
     display: grid;
